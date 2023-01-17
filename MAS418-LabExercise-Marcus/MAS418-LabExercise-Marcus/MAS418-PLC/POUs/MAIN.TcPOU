@@ -9,10 +9,17 @@ VAR
 	nUINT: UINT:= 65535;
 	fREAL: REAL:= 255.255;
 	sPowerStatus : STRING:= 'Power Off';
+	nFloatConversion: INT:= 3;
+	fFloatConversion: REAL;
+	nIntConv: INT;
+	fFloatConv: REAL:= 3.3;
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[bEnable := bStart;]]></ST>
+      <ST><![CDATA[bEnable := bStart;
+
+fFloatConversion := INT_TO_REAL(nFloatConversion);
+nIntConv := REAL_TO_INT(fFloatConv);]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>
