@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <GVL Name="G_Task1" Id="{d2dba033-adf4-4e52-b1dd-a99c7570e106}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>
