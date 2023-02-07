@@ -3,6 +3,8 @@
   <GVL Name="G_Task1" Id="{d2dba033-adf4-4e52-b1dd-a99c7570e106}">
     <Declaration><![CDATA[{attribute 'qualified_only'}
 VAR_GLOBAL
+	tdTimeNowVar : TIME_OF_DAY := TOD#13:53:00.00;
+	dDateVar : DATE := D#2023-02-07;
 END_VAR]]></Declaration>
   </GVL>
 </TcPlcObject>

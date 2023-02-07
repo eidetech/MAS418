@@ -3,11 +3,13 @@
   <POU Name="MAIN" Id="{f9c32a99-8e78-4f74-88a7-234889507b85}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
-	
+	pTimePointer : POINTER TO TIME_OF_DAY := ADR(G_Task1.tdTimeNowVar);
+	pDatePointer : POINTER TO DATE := ADR(G_Task1.dDateVar);
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[]]></ST>
+      <ST><![CDATA[pTimePointer^ := TOD#18:37:12.47;
+pDatePointer^ := D#2023-02-16;]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>
