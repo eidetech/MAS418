@@ -5,11 +5,20 @@
 VAR
 	pTimePointer : POINTER TO TIME_OF_DAY := ADR(G_Task1.tdTimeNowVar);
 	pDatePointer : POINTER TO DATE := ADR(G_Task1.dDateVar);
+	nReference : REFERENCE TO TIME REF= G_Task1.tFiveSec;
 END_VAR
 ]]></Declaration>
     <Implementation>
       <ST><![CDATA[pTimePointer^ := TOD#18:37:12.47;
-pDatePointer^ := D#2023-02-16;]]></ST>
+pDatePointer^ := D#2023-02-16;
+
+nReference := T#0D0H0M1S0MS;
+
+G_Task1.aArray[2] := D#2023-02-13;
+
+G_Task1.etest := E_Sensor.Bosch;
+G_Task1.bStartTimer := TRUE;
+G_Task1.fbTon(IN:=G_Task1.bStartTimer, PT := T#10S);]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>

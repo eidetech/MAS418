@@ -5,6 +5,12 @@
 VAR_GLOBAL
 	tdTimeNowVar : TIME_OF_DAY := TOD#13:53:00.00;
 	dDateVar : DATE := D#2023-02-07;
+	tFiveSec : TIME := T#0D0H0M5S0MS;
+	aArray : ARRAY[0..3] OF DATE := [D#2023-02-07, D#2023-02-08, D#2023-02-09, D#2023-02-10];
+	etest : E_Sensor;
+	bStartTimer: BOOL := FALSE;
+	bOutput : BOOL := FALSE;
+	fbTon : TON := ();
 END_VAR]]></Declaration>
   </GVL>
 </TcPlcObject>
