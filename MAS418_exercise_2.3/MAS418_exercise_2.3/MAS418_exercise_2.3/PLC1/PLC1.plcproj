@@ -33,6 +33,12 @@
     <Compile Include="Task 1\E_Control_Mode.TcDUT">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Task 1\I_ControlBox.TcIO">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Task 1\Virtual_ControlBox.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Task 1\P_Task_1.TcPOU">
       <SubType>Code</SubType>
     </Compile>
