@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <GVL Name="G_Task_1" Id="{e0169a0a-f9aa-4821-b0c4-bc7713e9c1bf}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+	
+bStart : BOOL := FALSE; // Start button input
+bStop : BOOL := FALSE; // Stop button input
+
+bAuto : BOOL := FALSE; // Auto control mode input
+bManual : BOOL := FALSE; // Manual control mode input
+
+bJoyActive : BOOL; // Activate the joystick boolean (Top switch)
+bJoyNotActive: BOOL; // Inverse logic of JoyActive
+fJoyX : REAL := 0; // Variable for storing the joy value in x direction (Cylinder)
+fJoyY : REAL := 0; // Variable for storing the joy value in y direction (Winch)
+
+eOff : E_Control_Mode := E_Control_Mode.OFF; // Enum for control mode OFF
+eManual : E_Control_Mode := E_Control_Mode.MANUAL; // Enum for control mode MANUAL
+eAuto : E_Control_Mode := E_Control_Mode.AUTO; // Enum for control mode AUTO
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

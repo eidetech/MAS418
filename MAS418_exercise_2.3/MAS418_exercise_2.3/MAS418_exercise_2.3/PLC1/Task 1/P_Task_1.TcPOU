@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="P_Task_1" Id="{c6996e0d-2204-4354-8f5d-c23ee57957ae}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM P_Task_1
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[IF G_Task_1.bJoyActive THEN
+G_Task_1.bJoyNotActive := FALSE;
+ELSE
+G_Task_1.bJoyNotActive := TRUE;
+END_IF]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
