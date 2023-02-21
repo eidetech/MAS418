@@ -17,43 +17,63 @@
     <LibraryReferences>{346d090f-5704-44fb-9c7d-40f5147fc1f3}</LibraryReferences>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ControlBox\FB_ControlBox.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlBox\G_ControlBox.TcGVL">
+      <SubType>Code</SubType>
+      <LinkAlways>true</LinkAlways>
+    </Compile>
     <Compile Include="GlobalTextList.TcGTLO">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="PlcTask.TcTTO">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\MAIN.TcPOU">
+    <Compile Include="Programs\MAIN.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Task 1\G_Task_1.TcGVL">
+    <Compile Include="ControlBox\E_Status.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlBox\FB_Real_Controller.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlBox\FB_Virtual_Controller.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlBox\G_IO_Parameters.TcGVL">
       <SubType>Code</SubType>
       <LinkAlways>true</LinkAlways>
     </Compile>
-    <Compile Include="Task 1\E_Control_Mode.TcDUT">
+    <Compile Include="ControlBox\G_Virtual_Input.TcGVL">
+      <SubType>Code</SubType>
+      <LinkAlways>true</LinkAlways>
+    </Compile>
+    <Compile Include="ControlBox\E_Control_Mode.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Task 1\I_ControlBox.TcIO">
+    <Compile Include="ControlBox\I_ControlBox.TcIO">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Task 1\Virtual_ControlBox.TcPOU">
+    <Compile Include="ControlBox\ST_Control_Box.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Task 1\P_Task_1.TcPOU">
+    <Compile Include="Programs\P_ControlBox.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Visualization Manager.TcVMO">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="VISUs\Visualization.TcVIS">
+    <Compile Include="HMI\Visualization.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Task 1" />
-    <Folder Include="VISUs" />
-    <Folder Include="POUs" />
+    <Folder Include="ControlBox" />
+    <Folder Include="HMI" />
+    <Folder Include="Programs" />
   </ItemGroup>
   <ItemGroup>
     <PlaceholderReference Include="System_VisuElemMeter">
@@ -119,8 +139,8 @@
   <ProjectExtensions>
     <PlcProjectOptions>
       <XmlArchive>
-  <Data>
-    <o xml:space="preserve" t="OptionKey">
+        <Data>
+          <o xml:space="preserve" t="OptionKey">
       <v n="Name">"&lt;ProjectRoot&gt;"</v>
       <d n="SubKeys" t="Hashtable" ckt="String" cvt="OptionKey">
         <v>{192FAD59-8248-4824-A8DE-9177C94C195A}</v>
@@ -150,14 +170,14 @@
       </d>
       <d n="Values" t="Hashtable" />
     </o>
-  </Data>
-  <TypeList>
-    <Type n="Boolean">System.Boolean</Type>
-    <Type n="Hashtable">System.Collections.Hashtable</Type>
-    <Type n="OptionKey">{54dd0eac-a6d8-46f2-8c27-2f43c7e49861}</Type>
-    <Type n="String">System.String</Type>
-  </TypeList>
-</XmlArchive>
+        </Data>
+        <TypeList>
+          <Type n="Boolean">System.Boolean</Type>
+          <Type n="Hashtable">System.Collections.Hashtable</Type>
+          <Type n="OptionKey">{54dd0eac-a6d8-46f2-8c27-2f43c7e49861}</Type>
+          <Type n="String">System.String</Type>
+        </TypeList>
+      </XmlArchive>
     </PlcProjectOptions>
   </ProjectExtensions>
 </Project>

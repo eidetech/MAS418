@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="FB_Virtual_Controller" Id="{d0ba9c6c-7d3e-4323-b5d3-7214c329989f}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Virtual_Controller IMPLEMENTS I_ControlBox
+VAR_INPUT
+END_VAR
+VAR_OUTPUT
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+    <Method Name="Joy_Normalized" Id="{3e2741d1-0d8e-4ce8-a284-f4fb2725cbd9}">
+      <Declaration><![CDATA[{warning 'add method implementation '}
+METHOD Joy_Normalized : REAL
+VAR_INPUT
+	JoyX_raw	: LREAL;
+	JoyY_raw	: LREAL;
+END_VAR
+VAR_OUTPUT
+	JoyX_normalized	: LREAL;
+	JoyY_normalized	: LREAL;
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[]]></ST>
+      </Implementation>
+    </Method>
+    <Method Name="Lamps" Id="{280bebe9-46ec-4fca-9d94-c7d7bf461e3a}">
+      <Declaration><![CDATA[METHOD Lamps : REAL
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[IF G_Virtual_Input.bAuto AND NOT G_Virtual_Input.bManual THEN
+	G_Virtual_Input.bAuto := TRUE;
+	G_Virtual_Input.bManual := FALSE;
+	G_Virtual_Input.bOff := FALSE;
+ELSIF G_Virtual_Input.bManual AND NOT G_Virtual_Input.bAuto THEN
+	G_Virtual_Input.bAuto := FALSE;
+	G_Virtual_Input.bManual := TRUE;
+	G_Virtual_Input.bOff := FALSE;
+ELSE
+	G_Virtual_Input.bAuto := FALSE;
+	G_Virtual_Input.bManual := FALSE;
+	G_Virtual_Input.bOff := TRUE;
+END_IF]]></ST>
+      </Implementation>
+    </Method>
+    <Method Name="Mode" Id="{0348c339-14fd-4a74-9b6e-3dbe81445505}">
+      <Declaration><![CDATA[{warning 'add method implementation '}
+METHOD Mode
+VAR_OUTPUT
+	eMode : E_Control_Mode;
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[CASE eMode OF 
+	E_Control_Mode.Off:	
+		IF G_Virtual_Input.bManual THEN	
+			eMode := E_Control_Mode.MANUAL;
+		END_IF
+		
+ELSE 	
+	eMode := E_Control_Mode.OFF;
+END_CASE]]></ST>
+      </Implementation>
+    </Method>
+    <Method Name="Status" Id="{a1ecf13f-901f-4e5c-9e12-ccc122ee8179}">
+      <Declaration><![CDATA[{warning 'add method implementation '}
+METHOD Status : E_Status
+VAR_INPUT
+	eMode	: E_Control_Mode;
+	bStartButton	: BOOL;
+	bStopButton	: BOOL;
+END_VAR
+VAR_OUTPUT
+	sControlMode	: STRING;
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[]]></ST>
+      </Implementation>
+    </Method>
+  </POU>
+</TcPlcObject>

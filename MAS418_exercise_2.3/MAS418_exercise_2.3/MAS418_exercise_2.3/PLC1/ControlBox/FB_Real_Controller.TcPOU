@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="FB_Real_Controller" Id="{fa77371d-8454-49b8-a0e3-7c322c1e5dfb}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Real_Controller IMPLEMENTS I_ControlBox
+VAR_INPUT
+END_VAR
+VAR_OUTPUT
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+    <Method Name="Joy_Normalized" Id="{87be7998-2d4e-42d3-9dc5-9bcda3573d67}">
+      <Declaration><![CDATA[{warning 'add method implementation '}
+METHOD Joy_Normalized : REAL
+VAR_INPUT
+	JoyX_raw	: LREAL;
+	JoyY_raw	: LREAL;
+END_VAR
+VAR_OUTPUT
+	JoyX_normalized	: LREAL;
+	JoyY_normalized	: LREAL;
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[]]></ST>
+      </Implementation>
+    </Method>
+    <Method Name="Mode" Id="{965e37cc-5164-4d3d-9774-f4c477c754f7}">
+      <Declaration><![CDATA[{warning 'add method implementation '}
+METHOD Mode
+VAR_OUTPUT
+	eMode	: E_Control_Mode;
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[]]></ST>
+      </Implementation>
+    </Method>
+    <Method Name="Status" Id="{f166d6bc-82f7-4b5e-81f8-2aaa803d7c4e}">
+      <Declaration><![CDATA[{warning 'add method implementation '}
+METHOD Status : E_Status
+VAR_INPUT
+	eMode	: E_Control_Mode;
+	bStartButton	: BOOL;
+	bStopButton	: BOOL;
+END_VAR
+VAR_OUTPUT
+	sControlMode	: STRING;
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[]]></ST>
+      </Implementation>
+    </Method>
+  </POU>
+</TcPlcObject>

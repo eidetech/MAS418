@@ -96,7 +96,7 @@
                     </o>
                     <o>
                       <v n="Id">1649127785L</v>
-                      <v n="Value">393</v>
+                      <v n="Value">226</v>
                     </o>
                     <o>
                       <v n="Id">357335551L</v>
@@ -104,7 +104,7 @@
                     </o>
                     <o>
                       <v n="Id">2422045748L</v>
-                      <v n="Value">330</v>
+                      <v n="Value">497</v>
                     </o>
                     <o>
                       <v n="Id">2134141914L</v>
@@ -215,7 +215,7 @@
                     </o>
                     <o>
                       <v n="Id">1649127785L</v>
-                      <v n="Value">426</v>
+                      <v n="Value">285</v>
                     </o>
                     <o>
                       <v n="Id">357335551L</v>
@@ -275,7 +275,7 @@
                     </o>
                     <o>
                       <v n="Id">743958181L</v>
-                      <v n="Value">"G_Task_1.bAuto"</v>
+                      <v n="Value">"G_Virtual_Input.bAuto"</v>
                     </o>
                   </l>
                 </o>
@@ -321,11 +321,11 @@
                     </o>
                     <o>
                       <v n="Id">1649127785L</v>
-                      <v n="Value">434</v>
+                      <v n="Value">282</v>
                     </o>
                     <o>
                       <v n="Id">357335551L</v>
-                      <v n="Value">417</v>
+                      <v n="Value">416</v>
                     </o>
                     <o>
                       <v n="Id">2422045748L</v>
@@ -377,7 +377,7 @@
                     </o>
                     <o>
                       <v n="Id">743958181L</v>
-                      <v n="Value">"G_Task_1.bStart"</v>
+                      <v n="Value">"G_Virtual_Input.bStart"</v>
                     </o>
                   </l>
                 </o>
@@ -423,11 +423,11 @@
                     </o>
                     <o>
                       <v n="Id">1649127785L</v>
-                      <v n="Value">434</v>
+                      <v n="Value">282</v>
                     </o>
                     <o>
                       <v n="Id">357335551L</v>
-                      <v n="Value">314</v>
+                      <v n="Value">313</v>
                     </o>
                     <o>
                       <v n="Id">2422045748L</v>
@@ -479,7 +479,7 @@
                     </o>
                     <o>
                       <v n="Id">743958181L</v>
-                      <v n="Value">"G_Task_1.bStop"</v>
+                      <v n="Value">"G_Virtual_Input.bStop"</v>
                     </o>
                   </l>
                 </o>
@@ -525,7 +525,7 @@
                     </o>
                     <o>
                       <v n="Id">1649127785L</v>
-                      <v n="Value">505</v>
+                      <v n="Value">420</v>
                     </o>
                     <o>
                       <v n="Id">357335551L</v>
@@ -585,7 +585,7 @@
                     </o>
                     <o>
                       <v n="Id">743958181L</v>
-                      <v n="Value">"G_Task_1.bManual"</v>
+                      <v n="Value">"G_Virtual_Input.bManual"</v>
                     </o>
                   </l>
                 </o>
@@ -611,11 +611,17 @@
                   <l n="VisualElemMemberList" t="VisualElemMemberCollection" cet="VisualElemMember">
                     <o>
                       <v n="Id">1404881523L</v>
-                      <v n="Value" t="Single">-1</v>
+                      <o n="Value" t="ConstantWithOptionalExpression">
+                        <v n="Constant" t="Single">0</v>
+                        <v n="Expression">"G_IO_Parameters.fMinInputValue"</v>
+                      </o>
                     </o>
                     <o>
                       <v n="Id">3837067714L</v>
-                      <v n="Value" t="Single">1</v>
+                      <o n="Value" t="ConstantWithOptionalExpression">
+                        <v n="Constant" t="Single">0</v>
+                        <v n="Expression">"G_IO_Parameters.fMaxInputValue"</v>
+                      </o>
                     </o>
                     <o>
                       <v n="Id">2867424708L</v>
@@ -663,7 +669,7 @@
                     </o>
                     <o>
                       <v n="Id">1649127785L</v>
-                      <v n="Value">533</v>
+                      <v n="Value">404</v>
                     </o>
                     <o>
                       <v n="Id">357335551L</v>
@@ -671,7 +677,7 @@
                     </o>
                     <o>
                       <v n="Id">2422045748L</v>
-                      <v n="Value">150</v>
+                      <v n="Value">279</v>
                     </o>
                     <o>
                       <v n="Id">2134141914L</v>
@@ -715,11 +721,11 @@
                     </o>
                     <o>
                       <v n="Id">397264524L</v>
-                      <v n="Value">"G_Task_1.fJoyY"</v>
+                      <v n="Value">"G_Virtual_Input.fJoyY"</v>
                     </o>
                     <o>
                       <v n="Id">2496894244L</v>
-                      <v n="Value">"G_Task_1.bJoyNotActive"</v>
+                      <v n="Value">"G_Virtual_Input.bJoyNotActive"</v>
                     </o>
                   </l>
                 </o>
@@ -745,11 +751,17 @@
                   <l n="VisualElemMemberList" t="VisualElemMemberCollection" cet="VisualElemMember">
                     <o>
                       <v n="Id">1404881523L</v>
-                      <v n="Value" t="Single">-1</v>
+                      <o n="Value" t="ConstantWithOptionalExpression">
+                        <v n="Constant" t="Single">0</v>
+                        <v n="Expression">"G_IO_Parameters.fMinInputValue"</v>
+                      </o>
                     </o>
                     <o>
                       <v n="Id">3837067714L</v>
-                      <v n="Value" t="Single">1</v>
+                      <o n="Value" t="ConstantWithOptionalExpression">
+                        <v n="Constant" t="Single">0</v>
+                        <v n="Expression">"G_IO_Parameters.fMaxInputValue"</v>
+                      </o>
                     </o>
                     <o>
                       <v n="Id">2867424708L</v>
@@ -797,7 +809,7 @@
                     </o>
                     <o>
                       <v n="Id">1649127785L</v>
-                      <v n="Value">533</v>
+                      <v n="Value">403</v>
                     </o>
                     <o>
                       <v n="Id">357335551L</v>
@@ -805,7 +817,7 @@
                     </o>
                     <o>
                       <v n="Id">2422045748L</v>
-                      <v n="Value">150</v>
+                      <v n="Value">280</v>
                     </o>
                     <o>
                       <v n="Id">2134141914L</v>
@@ -853,7 +865,7 @@
                     </o>
                     <o>
                       <v n="Id">397264524L</v>
-                      <v n="Value">"G_Task_1.fJoyX"</v>
+                      <v n="Value">"G_Virtual_Input.fJoyX"</v>
                     </o>
                     <o>
                       <v n="Id">3352862552L</v>
@@ -861,7 +873,7 @@
                     </o>
                     <o>
                       <v n="Id">2496894244L</v>
-                      <v n="Value">"G_Task_1.bJoyNotActive"</v>
+                      <v n="Value">"G_Virtual_Input.bJoyNotActive"</v>
                     </o>
                   </l>
                 </o>
@@ -967,7 +979,7 @@
                     </o>
                     <o>
                       <v n="Id">1649127785L</v>
-                      <v n="Value">526</v>
+                      <v n="Value">445</v>
                     </o>
                     <o>
                       <v n="Id">357335551L</v>
@@ -1002,7 +1014,7 @@
                     </o>
                     <o>
                       <v n="Id">550940142L</v>
-                      <v n="Value">556</v>
+                      <v n="Value">475</v>
                     </o>
                     <o>
                       <v n="Id">1473355128L</v>
@@ -1132,7 +1144,7 @@
                     </o>
                     <o>
                       <v n="Id">1649127785L</v>
-                      <v n="Value">544</v>
+                      <v n="Value">463</v>
                     </o>
                     <o>
                       <v n="Id">357335551L</v>
@@ -1167,7 +1179,7 @@
                     </o>
                     <o>
                       <v n="Id">550940142L</v>
-                      <v n="Value">557</v>
+                      <v n="Value">476</v>
                     </o>
                     <o>
                       <v n="Id">1473355128L</v>
@@ -1297,11 +1309,11 @@
                     </o>
                     <o>
                       <v n="Id">1649127785L</v>
-                      <v n="Value">442</v>
+                      <v n="Value">290</v>
                     </o>
                     <o>
                       <v n="Id">357335551L</v>
-                      <v n="Value">286</v>
+                      <v n="Value">285</v>
                     </o>
                     <o>
                       <v n="Id">2422045748L</v>
@@ -1454,11 +1466,11 @@
                     </o>
                     <o>
                       <v n="Id">1649127785L</v>
-                      <v n="Value">441</v>
+                      <v n="Value">289</v>
                     </o>
                     <o>
                       <v n="Id">357335551L</v>
-                      <v n="Value">391</v>
+                      <v n="Value">390</v>
                     </o>
                     <o>
                       <v n="Id">2422045748L</v>
@@ -1611,7 +1623,7 @@
                     </o>
                     <o>
                       <v n="Id">1649127785L</v>
-                      <v n="Value">583</v>
+                      <v n="Value">512</v>
                     </o>
                     <o>
                       <v n="Id">357335551L</v>
@@ -1768,7 +1780,7 @@
                     </o>
                     <o>
                       <v n="Id">1649127785L</v>
-                      <v n="Value">581</v>
+                      <v n="Value">510</v>
                     </o>
                     <o>
                       <v n="Id">357335551L</v>
@@ -1865,11 +1877,11 @@
                     </o>
                     <o>
                       <v n="Id">1649127785L</v>
-                      <v n="Value">628</v>
+                      <v n="Value">591</v>
                     </o>
                     <o>
                       <v n="Id">357335551L</v>
-                      <v n="Value">258</v>
+                      <v n="Value">209</v>
                     </o>
                     <o>
                       <v n="Id">2422045748L</v>
@@ -1921,7 +1933,7 @@
                     </o>
                     <o>
                       <v n="Id">743958181L</v>
-                      <v n="Value">"G_Task_1.bJoyActive"</v>
+                      <v n="Value">"G_Virtual_Input.bJoyActive"</v>
                     </o>
                   </l>
                 </o>
@@ -2027,11 +2039,11 @@
                     </o>
                     <o>
                       <v n="Id">1649127785L</v>
-                      <v n="Value">620</v>
+                      <v n="Value">583</v>
                     </o>
                     <o>
                       <v n="Id">357335551L</v>
-                      <v n="Value">230</v>
+                      <v n="Value">181</v>
                     </o>
                     <o>
                       <v n="Id">2422045748L</v>
@@ -2498,7 +2510,7 @@
                     </o>
                     <o>
                       <v n="Id">1649127785L</v>
-                      <v n="Value">510</v>
+                      <v n="Value">376</v>
                     </o>
                     <o>
                       <v n="Id">357335551L</v>
@@ -2655,7 +2667,7 @@
                     </o>
                     <o>
                       <v n="Id">1649127785L</v>
-                      <v n="Value">510</v>
+                      <v n="Value">376</v>
                     </o>
                     <o>
                       <v n="Id">357335551L</v>
@@ -2812,7 +2824,7 @@
                     </o>
                     <o>
                       <v n="Id">1649127785L</v>
-                      <v n="Value">428</v>
+                      <v n="Value">294</v>
                     </o>
                     <o>
                       <v n="Id">357335551L</v>
@@ -2969,7 +2981,7 @@
                     </o>
                     <o>
                       <v n="Id">1649127785L</v>
-                      <v n="Value">503</v>
+                      <v n="Value">418</v>
                     </o>
                     <o>
                       <v n="Id">357335551L</v>
@@ -3612,6 +3624,10 @@
                       <v n="Id">2597686782L</v>
                       <v n="Value">false</v>
                     </o>
+                    <o>
+                      <v n="Id">2477733581L</v>
+                      <v n="Value">""</v>
+                    </o>
                   </l>
                 </o>
                 <v n="VisualElementName">"Textfield"</v>
@@ -3961,6 +3977,288 @@
                 <v n="VisualElementId">95</v>
                 <l n="UserManagementAccessRights" t="ArrayList" />
               </o>
+              <o>
+                <a n="ConfiguredComplexInputs" et="ComplexInput" />
+                <l n="Elements" t="ArrayList" />
+                <n n="VisualElementDescription" />
+                <o n="VisualElemMemberList" t="VisualElemMemberList">
+                  <l n="VisualElemMemberList" t="VisualElemMemberCollection" cet="VisualElemMember">
+                    <o>
+                      <v n="Id">2812299069L</v>
+                      <v n="Value">4294967295U</v>
+                    </o>
+                    <o>
+                      <v n="Id">494569607L</v>
+                      <v n="Value">4278190080U</v>
+                    </o>
+                    <o>
+                      <v n="Id">3719097617L</v>
+                      <v n="Value">0</v>
+                    </o>
+                    <o>
+                      <v n="Id">1649127785L</v>
+                      <v n="Value">239</v>
+                    </o>
+                    <o>
+                      <v n="Id">357335551L</v>
+                      <v n="Value">216</v>
+                    </o>
+                    <o>
+                      <v n="Id">2422045748L</v>
+                      <v n="Value">37</v>
+                    </o>
+                    <o>
+                      <v n="Id">2134141914L</v>
+                      <v n="Value">41</v>
+                    </o>
+                    <o>
+                      <v n="Id">4062784938L</v>
+                      <v n="Value">"Element-Lamp-Lamp1-Green"</v>
+                    </o>
+                    <o>
+                      <v n="Id">493260384L</v>
+                      <v n="Value">4294967295U</v>
+                    </o>
+                    <o>
+                      <v n="Id">135947015L</v>
+                      <v n="Value">4278190080U</v>
+                    </o>
+                    <o>
+                      <v n="Id">2678395525L</v>
+                      <v n="Value">1U</v>
+                    </o>
+                    <o>
+                      <v n="Id">2340015797L</v>
+                      <v n="Value">"HCENTER"</v>
+                    </o>
+                    <o>
+                      <v n="Id">2565699834L</v>
+                      <v n="Value">"VCENTER"</v>
+                    </o>
+                    <o>
+                      <v n="Id">296037572L</v>
+                      <v n="Value">""</v>
+                    </o>
+                    <o>
+                      <v n="Id">390574330L</v>
+                      <v n="Value">""</v>
+                    </o>
+                    <o>
+                      <v n="Id">571893170L</v>
+                      <v n="Value">""</v>
+                    </o>
+                    <o>
+                      <v n="Id">2597686782L</v>
+                      <v n="Value">false</v>
+                    </o>
+                    <o>
+                      <v n="Id">743958181L</v>
+                      <v n="Value">"G_Virtual_Input.bAuto"</v>
+                    </o>
+                  </l>
+                </o>
+                <v n="VisualElementName">"Lamp1"</v>
+                <v n="VisualElementTypeName">"VisuFbElemLamp"</v>
+                <v n="VisualElementIsRectangle">true</v>
+                <v n="VisualElementIdentifier">"GenElemInst_97"</v>
+                <n n="VisualElementOfflinePaintCommands" />
+                <n n="VisualElementFrameInformation" />
+                <d n="VisualElementInputActions" t="Hashtable" />
+                <v n="VisualElementIdentification">{cd600ab3-00c6-4607-8ab8-2d37b9655c11}</v>
+                <v n="VisualElementOwningObjectGuid">{81918428-894a-4d31-8869-aaee674000f5}</v>
+                <a n="LMGuids" et="Guid" />
+                <d n="SubElements" t="Hashtable" />
+                <v n="VisualElementId">0</v>
+                <l n="UserManagementAccessRights" t="ArrayList" />
+              </o>
+              <o>
+                <a n="ConfiguredComplexInputs" et="ComplexInput" />
+                <l n="Elements" t="ArrayList" />
+                <n n="VisualElementDescription" />
+                <o n="VisualElemMemberList" t="VisualElemMemberList">
+                  <l n="VisualElemMemberList" t="VisualElemMemberCollection" cet="VisualElemMember">
+                    <o>
+                      <v n="Id">2812299069L</v>
+                      <v n="Value">4294967295U</v>
+                    </o>
+                    <o>
+                      <v n="Id">494569607L</v>
+                      <v n="Value">4278190080U</v>
+                    </o>
+                    <o>
+                      <v n="Id">3719097617L</v>
+                      <v n="Value">0</v>
+                    </o>
+                    <o>
+                      <v n="Id">1649127785L</v>
+                      <v n="Value">370</v>
+                    </o>
+                    <o>
+                      <v n="Id">357335551L</v>
+                      <v n="Value">216</v>
+                    </o>
+                    <o>
+                      <v n="Id">2422045748L</v>
+                      <v n="Value">37</v>
+                    </o>
+                    <o>
+                      <v n="Id">2134141914L</v>
+                      <v n="Value">41</v>
+                    </o>
+                    <o>
+                      <v n="Id">4062784938L</v>
+                      <v n="Value">"Element-Lamp-Lamp1-Red"</v>
+                    </o>
+                    <o>
+                      <v n="Id">493260384L</v>
+                      <v n="Value">4294967295U</v>
+                    </o>
+                    <o>
+                      <v n="Id">135947015L</v>
+                      <v n="Value">4278190080U</v>
+                    </o>
+                    <o>
+                      <v n="Id">2678395525L</v>
+                      <v n="Value">1U</v>
+                    </o>
+                    <o>
+                      <v n="Id">2340015797L</v>
+                      <v n="Value">"HCENTER"</v>
+                    </o>
+                    <o>
+                      <v n="Id">2565699834L</v>
+                      <v n="Value">"VCENTER"</v>
+                    </o>
+                    <o>
+                      <v n="Id">296037572L</v>
+                      <v n="Value">""</v>
+                    </o>
+                    <o>
+                      <v n="Id">390574330L</v>
+                      <v n="Value">""</v>
+                    </o>
+                    <o>
+                      <v n="Id">571893170L</v>
+                      <v n="Value">""</v>
+                    </o>
+                    <o>
+                      <v n="Id">2597686782L</v>
+                      <v n="Value">false</v>
+                    </o>
+                    <o>
+                      <v n="Id">743958181L</v>
+                      <v n="Value">"G_Virtual_Input.bOff"</v>
+                    </o>
+                  </l>
+                </o>
+                <v n="VisualElementName">"Lamp1"</v>
+                <v n="VisualElementTypeName">"VisuFbElemLamp"</v>
+                <v n="VisualElementIsRectangle">true</v>
+                <v n="VisualElementIdentifier">"GenElemInst_99"</v>
+                <n n="VisualElementOfflinePaintCommands" />
+                <n n="VisualElementFrameInformation" />
+                <d n="VisualElementInputActions" t="Hashtable" />
+                <v n="VisualElementIdentification">{46033bb2-0416-4c0e-8a3d-815dfdb4ca75}</v>
+                <v n="VisualElementOwningObjectGuid">{81918428-894a-4d31-8869-aaee674000f5}</v>
+                <a n="LMGuids" et="Guid" />
+                <d n="SubElements" t="Hashtable" />
+                <v n="VisualElementId">98</v>
+                <l n="UserManagementAccessRights" t="ArrayList" />
+              </o>
+              <o>
+                <a n="ConfiguredComplexInputs" et="ComplexInput" />
+                <l n="Elements" t="ArrayList" />
+                <n n="VisualElementDescription" />
+                <o n="VisualElemMemberList" t="VisualElemMemberList">
+                  <l n="VisualElemMemberList" t="VisualElemMemberCollection" cet="VisualElemMember">
+                    <o>
+                      <v n="Id">2812299069L</v>
+                      <v n="Value">4294967295U</v>
+                    </o>
+                    <o>
+                      <v n="Id">494569607L</v>
+                      <v n="Value">4278190080U</v>
+                    </o>
+                    <o>
+                      <v n="Id">3719097617L</v>
+                      <v n="Value">0</v>
+                    </o>
+                    <o>
+                      <v n="Id">1649127785L</v>
+                      <v n="Value">503</v>
+                    </o>
+                    <o>
+                      <v n="Id">357335551L</v>
+                      <v n="Value">216</v>
+                    </o>
+                    <o>
+                      <v n="Id">2422045748L</v>
+                      <v n="Value">37</v>
+                    </o>
+                    <o>
+                      <v n="Id">2134141914L</v>
+                      <v n="Value">41</v>
+                    </o>
+                    <o>
+                      <v n="Id">4062784938L</v>
+                      <v n="Value">"Element-Lamp-Lamp1-Green"</v>
+                    </o>
+                    <o>
+                      <v n="Id">493260384L</v>
+                      <v n="Value">4294967295U</v>
+                    </o>
+                    <o>
+                      <v n="Id">135947015L</v>
+                      <v n="Value">4278190080U</v>
+                    </o>
+                    <o>
+                      <v n="Id">2678395525L</v>
+                      <v n="Value">1U</v>
+                    </o>
+                    <o>
+                      <v n="Id">2340015797L</v>
+                      <v n="Value">"HCENTER"</v>
+                    </o>
+                    <o>
+                      <v n="Id">2565699834L</v>
+                      <v n="Value">"VCENTER"</v>
+                    </o>
+                    <o>
+                      <v n="Id">296037572L</v>
+                      <v n="Value">""</v>
+                    </o>
+                    <o>
+                      <v n="Id">390574330L</v>
+                      <v n="Value">""</v>
+                    </o>
+                    <o>
+                      <v n="Id">571893170L</v>
+                      <v n="Value">""</v>
+                    </o>
+                    <o>
+                      <v n="Id">2597686782L</v>
+                      <v n="Value">false</v>
+                    </o>
+                    <o>
+                      <v n="Id">743958181L</v>
+                      <v n="Value">"G_Virtual_Input.bManual"</v>
+                    </o>
+                  </l>
+                </o>
+                <v n="VisualElementName">"Lamp1"</v>
+                <v n="VisualElementTypeName">"VisuFbElemLamp"</v>
+                <v n="VisualElementIsRectangle">true</v>
+                <v n="VisualElementIdentifier">"GenElemInst_101"</v>
+                <n n="VisualElementOfflinePaintCommands" />
+                <n n="VisualElementFrameInformation" />
+                <d n="VisualElementInputActions" t="Hashtable" />
+                <v n="VisualElementIdentification">{10a6139c-9784-4663-a151-4d099f7616ba}</v>
+                <v n="VisualElementOwningObjectGuid">{81918428-894a-4d31-8869-aaee674000f5}</v>
+                <a n="LMGuids" et="Guid" />
+                <d n="SubElements" t="Hashtable" />
+                <v n="VisualElementId">100</v>
+                <l n="UserManagementAccessRights" t="ArrayList" />
+              </o>
             </l>
             <v n="BackgroundBitmapId">""</v>
             <v n="BackgroundColor">16777215</v>
@@ -4110,7 +4408,7 @@
             </o>
             <v n="DialogDut">{87414788-be11-4a93-bf7e-d1f6e7a1ffdf}</v>
           </o>
-          <v n="LastUsedIdForIdentifier">95</v>
+          <v n="LastUsedIdForIdentifier">101</v>
           <o n="TextDocument" t="TextDocument">
             <a n="TextLines" cet="TextLine">
               <o>
@@ -4166,6 +4464,7 @@
         <Type n="Boolean">System.Boolean</Type>
         <Type n="CaseInsensitiveHashtable">{7df88604-7ac5-4e36-91c4-55e4fdad3e68}</Type>
         <Type n="ComplexInput">{1de566f6-72a7-494c-9353-9a418172c96e}</Type>
+        <Type n="ConstantWithOptionalExpression">{be74fbbc-f60e-4118-88db-b2ee5169938e}</Type>
         <Type n="Double">System.Double</Type>
         <Type n="GeneratedLanguageModelEntriesData">{703465dc-4679-4ff2-bcc3-c57d0a204da3}</Type>
         <Type n="GenericFbDescription">{40d6dd8d-dfd0-493a-8e29-c9a35e1e6539}</Type>

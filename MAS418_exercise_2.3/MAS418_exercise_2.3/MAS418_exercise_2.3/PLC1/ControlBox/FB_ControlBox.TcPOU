@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="FB_ControlBox" Id="{4cfcb7b4-a156-4619-af4f-632ef49bc277}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_ControlBox
+VAR_INPUT
+	bRealControlBox : BOOL;
+END_VAR
+VAR_OUTPUT
+	eMode : E_Control_Mode;
+END_VAR
+VAR
+	fbVirtualControlBox : FB_Virtual_Controller;
+	fbRealControlBox : FB_Real_Controller;
+	fbSelectedControlBox : I_ControlBox := fbVirtualControlBox;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[IF bRealControlBox THEN
+	fbSelectedControlBox := fbRealControlBox;
+ELSE
+	fbVirtualControlBox.Lamps();
+END_IF
+
+fbRealControlBox.Mode(eMode => eMode);
+]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
