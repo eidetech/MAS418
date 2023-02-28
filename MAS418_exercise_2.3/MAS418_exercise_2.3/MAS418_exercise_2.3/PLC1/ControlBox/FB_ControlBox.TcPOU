@@ -7,6 +7,7 @@ VAR_INPUT
 END_VAR
 VAR_OUTPUT
 	eMode : E_Control_Mode;
+	eStatus : E_Status;
 END_VAR
 VAR
 	fbVirtualControlBox : FB_Virtual_Controller;
@@ -21,8 +22,8 @@ ELSE
 	fbVirtualControlBox.Lamps();
 END_IF
 
-fbRealControlBox.Mode(eMode => eMode);
-]]></ST>
+fbSelectedControlBox.Mode(eMode => eMode);
+fbSelectedControlBox.Status(eStatus => eStatus);]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>

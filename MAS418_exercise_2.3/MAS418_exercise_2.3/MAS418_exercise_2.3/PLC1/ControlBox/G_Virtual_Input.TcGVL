@@ -10,10 +10,12 @@ bAuto : BOOL := FALSE; // Auto control mode input
 bManual : BOOL := FALSE; // Manual control mode input
 bOff : BOOL := FALSE; // Off mode
 
+bStopping : BOOL := FALSE;
+
 bJoyActive : BOOL; // Activate the joystick boolean (Top switch)
 bJoyNotActive: BOOL; // Inverse logic of JoyActive
-fJoyX : REAL := 0; // Variable for storing the joy value in x direction (Cylinder)
-fJoyY : REAL := 0; // Variable for storing the joy value in y direction (Winch)
+fJoyX : REAL := G_IO_Parameters.fMaxInputValue/2 + G_IO_Parameters.fMinInputValue/2; // Variable for storing the joy value in x direction (Cylinder)
+fJoyY : REAL := G_IO_Parameters.fMaxInputValue/2 + G_IO_Parameters.fMinInputValue/2; // Variable for storing the joy value in y direction (Winch)
 END_VAR]]></Declaration>
   </GVL>
 </TcPlcObject>

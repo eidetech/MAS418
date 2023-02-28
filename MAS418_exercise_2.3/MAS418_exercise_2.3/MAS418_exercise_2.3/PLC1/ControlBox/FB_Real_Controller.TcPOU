@@ -42,15 +42,9 @@ END_VAR
     <Method Name="Status" Id="{f166d6bc-82f7-4b5e-81f8-2aaa803d7c4e}">
       <Declaration><![CDATA[{warning 'add method implementation '}
 METHOD Status : E_Status
-VAR_INPUT
-	eMode	: E_Control_Mode;
-	bStartButton	: BOOL;
-	bStopButton	: BOOL;
-END_VAR
 VAR_OUTPUT
-	sControlMode	: STRING;
-END_VAR
-]]></Declaration>
+	eStatus : E_Status;
+END_VAR]]></Declaration>
       <Implementation>
         <ST><![CDATA[]]></ST>
       </Implementation>

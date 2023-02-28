@@ -3618,7 +3618,7 @@
                     </o>
                     <o>
                       <v n="Id">390574330L</v>
-                      <v n="Value">""</v>
+                      <v n="Value">"%s"</v>
                     </o>
                     <o>
                       <v n="Id">2597686782L</v>
@@ -3626,7 +3626,11 @@
                     </o>
                     <o>
                       <v n="Id">2477733581L</v>
-                      <v n="Value">""</v>
+                      <v n="Value">"G_ControlBox.eMode"</v>
+                    </o>
+                    <o>
+                      <v n="Id">823443203L</v>
+                      <v n="Value">"126"</v>
                     </o>
                   </l>
                 </o>
@@ -3865,11 +3869,19 @@
                     </o>
                     <o>
                       <v n="Id">390574330L</v>
-                      <v n="Value">""</v>
+                      <v n="Value">"%s"</v>
                     </o>
                     <o>
                       <v n="Id">2597686782L</v>
                       <v n="Value">false</v>
+                    </o>
+                    <o>
+                      <v n="Id">2477733581L</v>
+                      <v n="Value">"G_ControlBox.eStatus"</v>
+                    </o>
+                    <o>
+                      <v n="Id">823443203L</v>
+                      <v n="Value">"126"</v>
                     </o>
                   </l>
                 </o>
@@ -3923,7 +3935,7 @@
                     </o>
                     <o>
                       <v n="Id">4062784938L</v>
-                      <v n="Value">"Element-Lamp-Lamp1-Green"</v>
+                      <v n="Value">"Element-Lamp-Lamp1-Red"</v>
                     </o>
                     <o>
                       <v n="Id">493260384L</v>
@@ -3960,6 +3972,10 @@
                     <o>
                       <v n="Id">2597686782L</v>
                       <v n="Value">false</v>
+                    </o>
+                    <o>
+                      <v n="Id">743958181L</v>
+                      <v n="Value">"G_Virtual_Input.bStopping"</v>
                     </o>
                   </l>
                 </o>

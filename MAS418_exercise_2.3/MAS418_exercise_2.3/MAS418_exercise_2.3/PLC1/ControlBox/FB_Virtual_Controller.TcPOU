@@ -44,6 +44,12 @@ ELSE
 	G_Virtual_Input.bAuto := FALSE;
 	G_Virtual_Input.bManual := FALSE;
 	G_Virtual_Input.bOff := TRUE;
+END_IF
+
+IF G_ControlBox.eStatus = E_Status.STOPPING THEN
+	G_Virtual_Input.bStopping := TRUE;
+ELSE
+	G_Virtual_Input.bStopping := FALSE;
 END_IF]]></ST>
       </Implementation>
     </Method>
@@ -55,31 +61,39 @@ VAR_OUTPUT
 END_VAR
 ]]></Declaration>
       <Implementation>
-        <ST><![CDATA[CASE eMode OF 
-	E_Control_Mode.Off:	
-		IF G_Virtual_Input.bManual THEN	
-			eMode := E_Control_Mode.MANUAL;
-		END_IF
-		
-ELSE 	
+        <ST><![CDATA[IF NOT G_Virtual_Input.bAuto AND NOT G_Virtual_Input.bManual AND NOT G_Virtual_Input.bStart THEN
 	eMode := E_Control_Mode.OFF;
-END_CASE]]></ST>
+ELSIF G_Virtual_Input.bAuto AND NOT G_Virtual_Input.bManual AND G_Virtual_Input.bStart THEN
+	eMode := E_Control_Mode.AUTO;
+ELSIF NOT G_Virtual_Input.bAuto AND G_Virtual_Input.bManual AND G_Virtual_Input.bJoyActive THEN
+	eMode := E_Control_Mode.MANUAL;
+END_IF]]></ST>
       </Implementation>
     </Method>
     <Method Name="Status" Id="{a1ecf13f-901f-4e5c-9e12-ccc122ee8179}">
       <Declaration><![CDATA[{warning 'add method implementation '}
 METHOD Status : E_Status
-VAR_INPUT
-	eMode	: E_Control_Mode;
-	bStartButton	: BOOL;
-	bStopButton	: BOOL;
-END_VAR
 VAR_OUTPUT
-	sControlMode	: STRING;
+	eStatus : E_Status;
 END_VAR
+
 ]]></Declaration>
       <Implementation>
-        <ST><![CDATA[]]></ST>
+        <ST><![CDATA[IF G_ControlBox.eMode = E_Control_Mode.OFF THEN
+	eStatus := E_Status.NOTREADY;
+END_IF
+IF G_ControlBox.eMode = E_Control_Mode.MANUAL OR G_ControlBox.eMode = E_Control_Mode.AUTO THEN
+	eStatus := E_Status.READY;
+END_IF
+IF G_Virtual_Input.bStart THEN
+	eStatus := E_Status.STARTING;
+END_IF
+IF (G_ControlBox.eMode = E_Control_Mode.MANUAL AND G_Virtual_Input.bStart) OR (G_ControlBox.eMode = E_Control_Mode.AUTO AND G_Virtual_Input.bStart) THEN
+	eStatus := E_Status.RUNNING;
+END_IF
+IF G_Virtual_Input.bStop THEN
+	eStatus := E_Status.STOPPING;
+END_IF]]></ST>
       </Implementation>
     </Method>
   </POU>

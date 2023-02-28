@@ -21,13 +21,8 @@ END_VAR]]></Declaration>
     </Method>
     <Method Name="Status" Id="{5107072e-e81b-4166-af85-2c0de74e031a}">
       <Declaration><![CDATA[METHOD Status : E_Status
-VAR_INPUT
-	eMode : E_Control_Mode;
-	bStartButton : BOOL;
-	bStopButton: BOOL;
-END_VAR
 VAR_OUTPUT
-	sControlMode : STRING;
+	eStatus : E_Status;
 END_VAR
 ]]></Declaration>
     </Method>
