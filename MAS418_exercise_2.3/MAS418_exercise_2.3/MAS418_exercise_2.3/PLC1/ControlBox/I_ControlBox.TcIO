@@ -5,12 +5,20 @@
     <Method Name="Joy_Normalized" Id="{5d4130d3-6c3a-4ac5-9965-d1fc49c0529c}">
       <Declaration><![CDATA[METHOD Joy_Normalized : REAL
 VAR_INPUT
-	JoyX_raw : LREAL;
-	JoyY_raw : LREAL;
+	// Joy X
+	fJoyX_raw : LREAL;
+	// Joy Y
+	fJoyY_raw : LREAL;
+	
+	// Min/max in/out parameters
+	fMin_in : LREAL;
+	fMax_in : LREAL;
+	fMin_out : REAL;
+	fMax_out : LREAL;
 END_VAR
 VAR_OUTPUT
-	JoyX_normalized : LREAL;
-	JoyY_normalized : LREAL;
+	fJoyX_normalized : LREAL;
+	fJoyY_normalized : LREAL;
 END_VAR]]></Declaration>
     </Method>
     <Method Name="Mode" Id="{c5c82611-b5c0-4eb8-9171-b21927bf4a1d}">

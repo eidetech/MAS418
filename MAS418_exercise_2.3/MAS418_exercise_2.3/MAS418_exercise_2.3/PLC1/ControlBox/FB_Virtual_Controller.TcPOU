@@ -16,16 +16,25 @@ END_VAR
       <Declaration><![CDATA[{warning 'add method implementation '}
 METHOD Joy_Normalized : REAL
 VAR_INPUT
-	JoyX_raw	: LREAL;
-	JoyY_raw	: LREAL;
+	// Joy X
+	fJoyX_raw : LREAL;
+	// Joy Y
+	fJoyY_raw : LREAL;
+	
+	// Min/max in/out parameters
+	fMin_in : LREAL;
+	fMax_in : LREAL;
+	fMin_out : REAL;
+	fMax_out : LREAL;
 END_VAR
 VAR_OUTPUT
-	JoyX_normalized	: LREAL;
-	JoyY_normalized	: LREAL;
-END_VAR
-]]></Declaration>
+	fJoyX_normalized : LREAL;
+	fJoyY_normalized : LREAL;
+END_VAR]]></Declaration>
       <Implementation>
-        <ST><![CDATA[]]></ST>
+        <ST><![CDATA[
+fJoyX_normalized := (fJoyX_raw - fMin_in) * (fMax_out - fMin_out) / (fMax_in - fMin_in) + fMin_out;
+fJoyY_normalized := (fJoyY_raw - fMin_in) * (fMax_out - fMin_out) / (fMax_in - fMin_in) + fMin_out;]]></ST>
       </Implementation>
     </Method>
     <Method Name="Lamps" Id="{280bebe9-46ec-4fca-9d94-c7d7bf461e3a}">

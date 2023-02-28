@@ -16,14 +16,21 @@ END_VAR
       <Declaration><![CDATA[{warning 'add method implementation '}
 METHOD Joy_Normalized : REAL
 VAR_INPUT
-	JoyX_raw	: LREAL;
-	JoyY_raw	: LREAL;
+	// Joy X
+	fJoyX_raw : LREAL;
+	// Joy Y
+	fJoyY_raw : LREAL;
+	
+	// Min/max in/out parameters
+	fMin_in : LREAL;
+	fMax_in : LREAL;
+	fMin_out : REAL;
+	fMax_out : LREAL;
 END_VAR
 VAR_OUTPUT
-	JoyX_normalized	: LREAL;
-	JoyY_normalized	: LREAL;
-END_VAR
-]]></Declaration>
+	fJoyX_normalized : LREAL;
+	fJoyY_normalized : LREAL;
+END_VAR]]></Declaration>
       <Implementation>
         <ST><![CDATA[]]></ST>
       </Implementation>

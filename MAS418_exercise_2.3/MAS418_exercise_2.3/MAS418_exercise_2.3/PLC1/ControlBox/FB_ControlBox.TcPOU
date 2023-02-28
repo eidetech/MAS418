@@ -23,7 +23,11 @@ ELSE
 END_IF
 
 fbSelectedControlBox.Mode(eMode => eMode);
-fbSelectedControlBox.Status(eStatus => eStatus);]]></ST>
+fbSelectedControlBox.Status(eStatus => eStatus);
+fbSelectedControlBox.Joy_Normalized(fJoyX_raw := G_Virtual_Input.fJoyX, fJoyY_raw := G_Virtual_Input.fJoyY,
+									fMin_in := G_IO_Parameters.fMinInputValue, fMax_in := G_IO_Parameters.fMaxInputValue,
+									fMin_out := G_IO_Parameters.fMinOutputValue, fMax_out := G_IO_Parameters.fMaxOutputValue,
+									fJoyX_normalized => G_Virtual_Input.fJoyX_Normalized, fJoyY_normalized => G_Virtual_Input.fJoyY_Normalized);]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>
