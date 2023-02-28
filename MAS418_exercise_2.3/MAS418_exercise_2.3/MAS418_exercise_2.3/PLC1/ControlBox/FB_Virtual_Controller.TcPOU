@@ -79,6 +79,23 @@ ELSIF NOT G_Virtual_Input.bAuto AND G_Virtual_Input.bManual AND G_Virtual_Input.
 END_IF]]></ST>
       </Implementation>
     </Method>
+    <Method Name="Sim" Id="{a8f5f6a0-4399-408c-a1da-dac58afdecaf}">
+      <Declaration><![CDATA[METHOD Sim
+VAR_INPUT
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[IF G_Virtual_Input.fJoyX_Normalized > 0 AND G_Sim.nX < G_Sim.xMax THEN
+	G_Sim.nX := G_Sim.nX+1;
+ELSIF G_Virtual_Input.fJoyX_Normalized < 0 AND G_Sim.nX > G_Sim.xMin THEN
+	G_Sim.nX := G_Sim.nX-1;
+ELSIF G_Virtual_Input.fJoyY_Normalized > 0 AND G_Sim.nY < G_Sim.yMax THEN
+	G_Sim.nY := G_Sim.nY+1;
+ELSIF G_Virtual_Input.fJoyY_Normalized < 0 AND G_Sim.nY > G_Sim.yMin THEN
+	G_Sim.nY := G_Sim.nY-1;
+END_IF]]></ST>
+      </Implementation>
+    </Method>
     <Method Name="Status" Id="{a1ecf13f-901f-4e5c-9e12-ccc122ee8179}">
       <Declaration><![CDATA[{warning 'add method implementation '}
 METHOD Status : E_Status
